@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "b531a9fc-f866-4500-8814-875408dded13",
+            "Value": {
+                "id": "3aa7b1e0-31c5-4218-bc9e-21a5f721cfa1",
+                "resourcePath": "scripts\\macros\\macros.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b5e4af16-361f-4648-9222-48c322dc328d",
             "Value": {
                 "id": "649a5374-4caa-4ea1-b97a-e63e3f7bf364",
@@ -224,7 +232,7 @@
         }
     ],
     "script_order": [
-        
+        "b531a9fc-f866-4500-8814-875408dded13"
     ],
     "tutorial": ""
 }

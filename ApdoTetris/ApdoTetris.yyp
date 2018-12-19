@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "39383f58-5114-4076-86ae-ba8a5b6545a6",
+            "Value": {
+                "id": "4fffdbde-b145-4246-ac05-192f041aa00d",
+                "resourcePath": "sprites\\spr_line\\spr_line.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e082d65-c41c-4a53-b21c-d389a00703a7",
             "Value": {
                 "id": "f5492a78-549a-4535-8cea-545fef3b0b65",
@@ -124,6 +132,14 @@
                 "id": "bdf7d614-74ad-4843-9779-ae8639991cbf",
                 "resourcePath": "tilesets\\tile_collisions\\tile_collisions.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "80d6574d-2815-4f36-8ab5-cf97a78e0cf0",
+            "Value": {
+                "id": "c91019b8-b9f0-4bd8-a080-da65e500d67f",
+                "resourcePath": "objects\\obj_line\\obj_line.yy",
+                "resourceType": "GMObject"
             }
         },
         {

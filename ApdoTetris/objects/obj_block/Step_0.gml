@@ -1,7 +1,6 @@
-if alarm[DROP] < 0 {
-	alarm[DROP] = drop_down_timer;
-	vertical_speed = 0;
-}
+get_input();
+
+calc_movement();
 
 collision();
 

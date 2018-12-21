@@ -16,5 +16,7 @@ if place_meeting(x, y + vertical_speed, obj_block) {
 	landed = true;
 }
 
-x += horizontal_speed;
-y += vertical_speed;
+if !landed {
+	x += horizontal_speed;
+	y += vertical_speed;
+}

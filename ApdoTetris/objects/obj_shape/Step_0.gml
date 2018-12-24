@@ -26,6 +26,11 @@ if !landed {
 	if vertical_collision vertical_speed = 0;
 	
 	if landed {
+		// label all the blocks as landed
+		for(var i = 0; i < ds_list_size(blocks); i++) {
+			var block = ds_list_find_value(blocks, i);
+			block.landed = landed;
+		}
 		instance_destroy();
 	} else {
 		// apply the speed to the x-y values periodically

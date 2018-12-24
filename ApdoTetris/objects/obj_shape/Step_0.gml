@@ -17,8 +17,8 @@ if !landed {
 			collision();
 			
 			if landed other.landed = true;
-			if collision_type != collision_state.HORIZONTAL horizontal_collision = true;
-			if collision_type != collision_state.VERTICAL vertical_collision = true;
+			if collision_type == collision_state.HORIZONTAL horizontal_collision = true;
+			if collision_type == collision_state.VERTICAL vertical_collision = true;
 		}
 	}
 	
@@ -41,7 +41,7 @@ if !landed {
 		}
 	}
 	
-	// reset the alarm timer when expired
+	// reset the alarm timers when expired
 	if alarm[DROP] < 0 alarm[DROP] = drop_down_timer;
 	if alarm[VERTICAL_MOVE] < 0 alarm[VERTICAL_MOVE] = vertical_move_timer;
 	if alarm[HORIZONTAL_MOVE] < 0 alarm[HORIZONTAL_MOVE] = horizontal_move_timer;

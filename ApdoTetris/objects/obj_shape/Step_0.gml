@@ -25,10 +25,12 @@ if !landed {
 	if horizontal_collision horizontal_speed = 0;
 	if vertical_collision vertical_speed = 0;
 	
-	// apply the speed to the x-y values periodically
-	for(var i = 0; i < ds_list_size(blocks); i++) {
-		var block = ds_list_find_value(blocks, i);
-		if !landed {
+	if landed {
+		instance_destroy();
+	} else {
+		// apply the speed to the x-y values periodically
+		for(var i = 0; i < ds_list_size(blocks); i++) {
+			var block = ds_list_find_value(blocks, i);
 			if down {
 				if alarm[VERTICAL_MOVE] < 0 block.y += vertical_speed;
 			} else {
@@ -40,6 +42,7 @@ if !landed {
 			}
 		}
 	}
+		
 	
 	// reset the alarm timers when expired
 	if alarm[DROP] < 0 alarm[DROP] = drop_down_timer;

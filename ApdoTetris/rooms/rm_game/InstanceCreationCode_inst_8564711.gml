@@ -1,1 +1,0 @@
-tetrominoe_type = tetrominoe.L_SHAPE_RIGHT;

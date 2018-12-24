@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "47b4cbb3-6c91-4d65-aa45-494245e7cbe1",
+            "Value": {
+                "id": "fb68dbe5-8410-4982-8cb0-2e8f32534c0a",
+                "resourcePath": "scripts\\get_tetrominoe\\get_tetrominoe.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4a03c106-0402-4440-8107-badf59504335",
             "Value": {
                 "id": "7d09263a-1a79-4a45-b40a-5489c18bb2dd",
@@ -271,6 +279,14 @@
             }
         },
         {
+            "Key": "f43797ff-109c-42fd-8ea9-90b3c6dfe487",
+            "Value": {
+                "id": "e12d2a1d-005e-418d-9354-1358cb722d85",
+                "resourcePath": "objects\\obj_spawner\\obj_spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fb925d97-a281-4bb2-ad4b-0ede69052b83",
             "Value": {
                 "id": "5b3d5aa9-0558-4a35-adcc-53c1431e7d9d",
@@ -292,7 +308,8 @@
         "44f5ec07-ead3-496f-a701-1e30dd170442",
         "8673152f-6066-4a1c-8b0f-72fe96484d92",
         "fb925d97-a281-4bb2-ad4b-0ede69052b83",
-        "7f74c91c-87a4-4ff4-bbf3-d77a524a026f"
+        "7f74c91c-87a4-4ff4-bbf3-d77a524a026f",
+        "47b4cbb3-6c91-4d65-aa45-494245e7cbe1"
     ],
     "tutorial": ""
 }

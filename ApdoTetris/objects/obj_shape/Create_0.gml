@@ -16,6 +16,7 @@ vertical_collision = false;
 drop_down_timer = room_speed * 0.3;
 horizontal_move_timer = room_speed * 0.05;
 vertical_move_timer = room_speed * 0.025;
+rotate_timer = room_speed * 0.05;
 
 // spawn location
 init_axis_point_x = 940;

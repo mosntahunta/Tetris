@@ -1,5 +1,12 @@
 if !landed {
 	get_input();
+	
+	// rotate block
+	if up and tetrominoe_type != tetrominoe.SQUARE_SHAPE and tetrominoe_type != tetrominoe.NO_SHAPE {
+		for(var i = 1; i < ds_list_size(blocks); i++) {
+			rotate_block(axis_block, ds_list_find_value(blocks, i));
+		}
+	}
 
 	calc_movement();
 	
@@ -47,7 +54,6 @@ if !landed {
 			}
 		}
 	}
-		
 	
 	// reset the alarm timers when expired
 	if alarm[DROP] < 0 alarm[DROP] = drop_down_timer;

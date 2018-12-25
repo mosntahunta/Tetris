@@ -1,11 +1,9 @@
 if !landed {
 	get_input();
 	
-	// rotate block
+	// rotate blocks in the shape
 	if up and tetrominoe_type != tetrominoe.SQUARE_SHAPE and tetrominoe_type != tetrominoe.NO_SHAPE {
-		for(var i = 1; i < ds_list_size(blocks); i++) {
-			rotate_block(axis_block, ds_list_find_value(blocks, i));
-		}
+		rotate_shape(axis_block, blocks);
 	}
 
 	calc_movement();

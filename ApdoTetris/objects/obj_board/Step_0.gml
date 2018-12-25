@@ -10,7 +10,7 @@ for(var i = ds_list_size(lines) - 1; i >= 0; i--) {
 			instance_destroy(ds_list_find_value(line.blocks, j));
 		}
 		
-		// clear the line
+		// clear the line list
 		ds_list_clear(line.blocks);
 		
 		line.full = false;
@@ -20,7 +20,7 @@ for(var i = ds_list_size(lines) - 1; i >= 0; i--) {
 }
 
 if lines_cleared > 0 {
-	// first move down uncleared lines between the bottom most cleared line 
+	// first move down any uncleared lines between the bottom most cleared line 
 	// and top most cleared line
 	var bottom_cleared_pos = ds_list_find_value(pos_cleared, ds_list_size(pos_cleared) - 1);
 	var top_cleared_pos = ds_list_find_value(pos_cleared, 0);

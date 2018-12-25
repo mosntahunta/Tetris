@@ -34,7 +34,7 @@
             "Key": "16b44637-1ddd-4bf7-91a9-73856f69efb8",
             "Value": {
                 "id": "9a7a9f48-165f-46b8-8a8b-67a7e4ff428b",
-                "resourcePath": "scripts\\rotate_block\\rotate_block.yy",
+                "resourcePath": "scripts\\rotate_shape\\rotate_shape.yy",
                 "resourceType": "GMScript"
             }
         },

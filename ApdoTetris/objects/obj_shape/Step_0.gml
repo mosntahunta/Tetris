@@ -2,8 +2,12 @@ if !landed {
 	get_input();
 	
 	// rotate blocks in the shape
-	if up and tetrominoe_type != tetrominoe.SQUARE_SHAPE and tetrominoe_type != tetrominoe.NO_SHAPE {
-		rotate_shape(axis_block, blocks);
+	if tetrominoe_type != tetrominoe.SQUARE_SHAPE and tetrominoe_type != tetrominoe.NO_SHAPE {
+		if up {
+			rotate_shape(axis_block, blocks, 1);
+		} else if shift {
+			rotate_shape(axis_block, blocks, -1);
+		}
 	}
 
 	calc_movement();

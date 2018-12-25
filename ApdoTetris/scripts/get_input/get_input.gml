@@ -6,6 +6,8 @@ right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 up	  = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"));
 down  = keyboard_check(vk_down) or keyboard_check(ord("S"));
 
+shift = keyboard_check_pressed(vk_shift);
+
 // controller input
 var _dev = 4; // nintendo switch pro controller, ps4.
 

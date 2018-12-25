@@ -1,5 +1,5 @@
 var lines_cleared = 0;
-var pos_cleared = 0; // the bottom most line that was cleared
+var pos_cleared = ds_list_create();
 
 // check for full lines and clear them
 for(var i = ds_list_size(lines) - 1; i >= 0; i--) {
@@ -15,24 +15,33 @@ for(var i = ds_list_size(lines) - 1; i >= 0; i--) {
 		
 		line.full = false;
 		lines_cleared++;
-		pos_cleared = i;
+		ds_list_add(pos_cleared, i);
 	}
 }
 
-// move down all the blocks above to fill the cleared lines
 if lines_cleared > 0 {
-	for(var i = pos_cleared + lines_cleared; i < ds_list_size(lines); i++) {
-		var line = ds_list_find_value(lines, i);
-		if !ds_list_empty(line.blocks) {
-			for(var j = 0; j < ds_list_size(line.blocks); j++) {
-				var block = ds_list_find_value(line.blocks, j);
-				if block != undefined {
-					with block {
-						y += sprite_height * lines_cleared;
-					}
-				}
-			}
-			ds_list_clear(line.blocks);
+	// first move down uncleared lines between the bottom most cleared line 
+	// and top most cleared line
+	var bottom_cleared_pos = ds_list_find_value(pos_cleared, ds_list_size(pos_cleared) - 1);
+	var top_cleared_pos = ds_list_find_value(pos_cleared, 0);
+	var line_cleared_remain = lines_cleared;
+	
+	while top_cleared_pos != bottom_cleared_pos {
+		var current_line = ds_list_find_value(lines, top_cleared_pos);
+		if ds_list_empty(current_line.blocks) {
+			line_cleared_remain--;
+		} else {
+			move_line_down(current_line, line_cleared_remain);
+		}
+		top_cleared_pos--;
+	}
+	
+	// move down all the uncleared lines above the top most cleared line
+	// by the total number of lines cleared in this step
+	for(var i = ds_list_find_value(pos_cleared, 0) + 1; i < ds_list_size(lines); i++) {
+		var current_line = ds_list_find_value(lines, i);
+		if !ds_list_empty(current_line.blocks) {
+			move_line_down(current_line, lines_cleared);
 		}
 	}
 }

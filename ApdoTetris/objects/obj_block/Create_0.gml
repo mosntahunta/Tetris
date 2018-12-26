@@ -3,12 +3,5 @@ horizontal_speed = 0;
 
 landed = false;
 
-// collision
-enum collision_state 
-{
-	NONE,
-	HORIZONTAL,
-	VERTICAL
-}
-
-collision_type = collision_state.NONE;
+horizontal_collision = false;
+vertical_collision = false;

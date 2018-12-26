@@ -31,3 +31,4 @@ for(var i = 0; i < ds_list_size(blocks); i++) {
 	}
 }
 
+alarm[LAND] = -1;

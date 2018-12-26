@@ -1,7 +1,15 @@
 ///
-/// check for collision with another block or the walls and
-/// determine whether or not the block has landed
+/// check for collision with another block or the walls before the speed has been applied
 ///
+/// to be called by obj_block only
+///
+/// check_move_collision(horizontal_speed, vertical_speed)
+/// @arg horizontal_speed - caller's horizontal speed
+/// @arg vertical_speed - caller's vertical speed
+///
+
+var horizontal_speed = argument0;
+var vertical_speed = argument1;
 
 // reset the collision state
 horizontal_collision = false;

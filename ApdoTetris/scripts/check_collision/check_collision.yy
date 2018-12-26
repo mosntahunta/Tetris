@@ -1,8 +1,8 @@
 {
-    "id": "44f5ec07-ead3-496f-a701-1e30dd170442",
+    "id": "ed95cdc0-2ec0-4dc0-a04b-2208668f87ae",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "collision",
+    "name": "check_collision",
     "IsCompatibility": false,
     "IsDnD": false
 }

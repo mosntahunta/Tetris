@@ -11,7 +11,7 @@ if tetrominoe_type != tetrominoe.SQUARE_SHAPE and tetrominoe_type != tetrominoe.
 }
 
 calc_movement();
-	
+
 horizontal_collision = false;
 vertical_collision = false;
 	
@@ -19,11 +19,7 @@ vertical_collision = false;
 for(var i = 0; i < ds_list_size(blocks); i++) {
 	var block = ds_list_find_value(blocks, i);
 	with block {
-		// apply shape speed to block speed
-		block.horizontal_speed = other.horizontal_speed;
-		block.vertical_speed = other.vertical_speed;
-			
-		collision();
+		check_move_collision(other.horizontal_speed, other.vertical_speed);
 			
 		if block.horizontal_collision other.horizontal_collision = true;
 		if block.vertical_collision other.vertical_collision = true;

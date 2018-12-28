@@ -1,2 +1,4 @@
-shape = instance_create_layer(0, 0, "Control", obj_shape);
-shape.tetrominoe_type = get_tetrominoe();
+if !obj_game.game_over {
+	shape = instance_create_layer(0, 0, "Control", obj_shape);
+	shape.tetrominoe_type = get_tetrominoe();
+}

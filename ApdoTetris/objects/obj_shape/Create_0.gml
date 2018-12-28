@@ -17,8 +17,14 @@ vertical_collision = false;
 horizontal_collision = false;
 vertical_collision = false;
 
+// drop down speed levels
+drop_down_timer_level[EASY] = 0.5;
+drop_down_timer_level[NORMAL] = 0.3;
+drop_down_timer_level[HEROIC] = 0.2;
+drop_down_timer_level[LEGENDARY] = 0.1;
+drop_down_timer_level[LINSANITY] = 0.05;
+
 // alarm timers
-drop_down_timer = room_speed * 0.3;
 horizontal_move_timer = room_speed * 0.05;
 vertical_move_timer = room_speed * 0.025;
 rotate_timer = room_speed * 0.05;

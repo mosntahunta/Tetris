@@ -44,4 +44,6 @@ if lines_cleared > 0 {
 			move_line_down(current_line, lines_cleared);
 		}
 	}
+	
+	obj_game.lines_cleared += lines_cleared;
 }

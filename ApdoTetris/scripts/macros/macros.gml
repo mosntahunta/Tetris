@@ -10,3 +10,10 @@
 
 // shape spawning
 #macro SPAWN 0
+
+// drop speed levels
+#macro EASY 0
+#macro NORMAL 1
+#macro HEROIC 2
+#macro LEGENDARY 3
+#macro LINSANITY 4

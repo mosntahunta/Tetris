@@ -13,6 +13,8 @@ if !spawned {
 			
 			third_block.x = axis_block.bbox_right + axis_block.sprite_width / 2 + 1;
 			third_block.y = axis_block.bbox_top - axis_block.sprite_height / 2;
+			
+			block_sprite = 1;
 		break;
 	
 		case tetrominoe.L_SHAPE_RIGHT:
@@ -24,6 +26,8 @@ if !spawned {
 			
 			third_block.x = axis_block.bbox_left - axis_block.sprite_width / 2;
 			third_block.y = axis_block.bbox_top - axis_block.sprite_height / 2;
+			
+			block_sprite = 2;
 		break;
 	
 		case tetrominoe.Z_SHAPE_LEFT:
@@ -35,6 +39,8 @@ if !spawned {
 			
 			third_block.x = axis_block.bbox_right + axis_block.sprite_width / 2 + 1;
 			third_block.y = axis_block.y;
+			
+			block_sprite = 3;
 		break;
 	
 		case tetrominoe.Z_SHAPE_RIGHT:
@@ -46,6 +52,8 @@ if !spawned {
 			
 			third_block.x = axis_block.bbox_left - axis_block.sprite_width / 2;
 			third_block.y = axis_block.y;
+			
+			block_sprite = 4;
 		break;
 	
 		case tetrominoe.LINE_SHAPE:
@@ -57,6 +65,8 @@ if !spawned {
 			
 			third_block.x = axis_block.bbox_right + 1.5 * axis_block.sprite_width + 1;
 			third_block.y = axis_block.y;
+			
+			block_sprite = 5;
 		break;
 	
 		case tetrominoe.T_SHAPE:
@@ -68,6 +78,8 @@ if !spawned {
 			
 			third_block.x = axis_block.bbox_right + axis_block.sprite_width / 2 + 1;
 			third_block.y = axis_block.y;
+			
+			block_sprite = 6;
 		break
 	
 		case tetrominoe.SQUARE_SHAPE:
@@ -79,10 +91,18 @@ if !spawned {
 			
 			third_block.x = axis_block.bbox_right + axis_block.sprite_width / 2 + 1;
 			third_block.y = axis_block.y;
+			
+			block_sprite = 7;
 		break;
 	
 		case tetrominoe.NO_SHAPE:
 		break;
+	}
+	
+	for(var i = 0; i < ds_list_size(blocks); i++) {
+		var block = ds_list_find_value(blocks, i);
+		block.image_speed = 0;
+		block.image_index = other.block_sprite;
 	}
 	spawned = true;	
 }

@@ -48,6 +48,10 @@ repeat(3) {
 horizontal_speed_initial = axis_block.sprite_width;
 vertical_speed_initial = axis_block.sprite_height;
 
+// sprite index for the block
+block_sprite = 0;
+
+// shape has spawned
 spawned = false;
 
 // tetrominoe types

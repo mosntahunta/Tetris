@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0c055d55-28cf-4263-a775-317d4f01bacb",
+            "Value": {
+                "id": "f4e89f60-db62-463a-b59d-d4d7ae174c7e",
+                "resourcePath": "sprites\\spr_background\\spr_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "16b44637-1ddd-4bf7-91a9-73856f69efb8",
             "Value": {
                 "id": "9a7a9f48-165f-46b8-8a8b-67a7e4ff428b",

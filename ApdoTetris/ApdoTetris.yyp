@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "46e808cc-d5f9-411e-9f3d-c4a39d44b12b",
+            "Value": {
+                "id": "1642cb75-4363-4b55-96bc-206631c93662",
+                "resourcePath": "sprites\\spr_game_over\\spr_game_over.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "47b4cbb3-6c91-4d65-aa45-494245e7cbe1",
             "Value": {
                 "id": "fb68dbe5-8410-4982-8cb0-2e8f32534c0a",
@@ -124,6 +132,14 @@
                 "id": "7d09263a-1a79-4a45-b40a-5489c18bb2dd",
                 "resourcePath": "views\\4a03c106-0402-4440-8107-badf59504335.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "60d8a2f6-c14d-4ef5-ae50-36f7f96b9901",
+            "Value": {
+                "id": "b1580dda-7e0b-42bd-b59c-7e39f040eccc",
+                "resourcePath": "fonts\\font_cambria\\font_cambria.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -196,6 +212,14 @@
                 "id": "515fd72f-dff4-4f53-beef-069d22f27d6c",
                 "resourcePath": "scripts\\move_line_down\\move_line_down.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "94e4aca4-2cb5-47a5-9c84-fe0703155424",
+            "Value": {
+                "id": "582337f2-b7d0-441f-92a4-2188f9b73bf4",
+                "resourcePath": "fonts\\font_segoe\\font_segoe.yy",
+                "resourceType": "GMFont"
             }
         },
         {

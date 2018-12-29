@@ -1,6 +1,11 @@
 game_over = false;
 lines_cleared = 0;
 
+// fade in the game over screen
+fade_in_alpha = 1;
+fade_out_alpha = 0;
+fade_speed = 0.02;
+
 // highscore
 save_name = "game.sav";
 highscore = 0;
